@@ -1,0 +1,15 @@
+(1)IP Address: 34.117.212.145:80
+(2)Project ID: submission-kandaputra
+(3)Sharable link:https://cloud.google.com/products/calculator?hl=id&dl=CjhDaVF3WXpkaE9HSm1OUzFoT1RGaUxUUTJPVGd0WVRFM055MDRaalF6WkdJM05UVmtZV1lRQWc9PRAOGiQzMTZFMTBEOC0zMUNCLTQ5MUUtQUYzMy0zNDVEOTkyRDMzN0U 
+
+Fungsi/Kegunaan dari Setiap Metric : 
+(1)Penggunaan CPU  : pencatatan tingkat penggunaan CPU (Central Processing Unit) dalam jangka waktu 1 menit terakhir. 
+(2)VM Memory  usage: Memantau penggunaan memori membantu memastikan bahwa sumber daya fisik yang tersedia dialokasikan dengan tepat di antara VM yang berbeda
+(3)Maksimum rate request loadbalancing : untuk memahami kinerja dan kapasitas load balancer.  Memantau dan menguji metrik ini penting untuk memastikan aplikasi  dapat menangani beban kerja yang diharapkan dan tetap tersedia bagi pengguna.
+(4)TCP Connection : memantau aktivitas jaringan dan kesehatan VM,koneksi TCP yang tinggi dapat mengindikasikan bahwa aplikasi di dalam VM sedang memproses banyak permintaan.
+
+
+Alasan Pemilihan Machine Type, Region, dan Load Balancer Type:
+(1)Machine Type: e2-standard-4 (4 vCPUs, 16 GB Memory) menggunakan machine type yang tidak highly spec dan tidak juga low spec menjadikan nya cocok untuk standar sever untuk skala e-commerce global
+(2)Region : menempatkan di singapore dan Findland , melayani  pelanggan yang ada di Asia Tenggara dan Eropa dengan latensi rendah, tidak ada alasan khusus untuk pemilihan region di findland, namun masih menempatkan vm pada daerah eropa untuk tetap menjaga latensi rendah pada daerah eropa 
+(3)Load Balancer type: menggunakan http karena konfigurasi menggunakan https memerlukan domain, saya pribadi tidak memiiliki domain
